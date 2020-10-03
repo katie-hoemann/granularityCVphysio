@@ -17,3 +17,5 @@ RSA_granularity_correlations_withinPerson_FINAL.m = performs participants-level 
 clusteringAnalysis_granularity_correlations_FINAL.m = performs group-level (across-subjects) correlations examining relationship between overall granularity and number of clusters discovered in seated rest data
 clusteringAnalysis_granularity_ANOVAs_FINAL.m = performs group-level (across-subjects) one-way ANOVAs examining whether granularity differs by participants' assigned cluster (using data from group-level clustering performed using Python script)
 classificationAnalysis_granularity_correlations_FINAL.m = performs group-level (across-subjects) correlations examining relationship between overall granularity and classifier performance (on event-based physio data)
+grouplevel_clustering_visualization_final.m = performs group-level (across-subjects) visualizations of clustering results
+main_clustering_grouplevel_wNMI.py = performs group-level (across-subjects) clustering analyses, including post-hoc assessment of normalized mutual information (NMI) of each feature's contribution
