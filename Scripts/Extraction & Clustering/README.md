@@ -14,3 +14,9 @@ subject folder with the name "sitting_feautres_summary_[subject id].xlsx
 
 3. main_clustering.py:
 This script also runs on a per subject level. When prompted navigate to the subject specific folder containing the excel sheet from last step. Once completed this will create another excel sheet with all the information from the input sheet plus clustering results, the sheet will be named "sitting_features_summary_results_[subject id].xlsx
+
+OPTIONAL: 4. main_clustering_setNandA.py:
+This script is identical to the above, except that it implements (user-specific) standard values for the prior N components and alpha hyperparameters.
+
+OPTIONAL: 5. main_marginal_alpha_N.py:
+This script runs on a per subject level to perform a Bayesian hyperparameter selection approach known as Empirical Bayes, which examines the  marginal likelihood (i.e., evidence) of model fit across a distribution of possible values for DP-GMM hyperparameters for prior N components and alpha.

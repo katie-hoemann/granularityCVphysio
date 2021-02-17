@@ -3,7 +3,6 @@ clc;
 
 %% load classification and granularity data
 load('classificationAnalysis_granularity_data.mat');
-data = allData_array;
 N = size(data,1);
 
 %% invert zICC values to get granularity
@@ -22,7 +21,7 @@ figure;
 scatter1 = scatter(data(:,4),data(:,11),[],rgb('SeaGreen'),'filled');
 set(gca,'fontsize',14)
 xlim([-1.4 0]);
-xlabel('emotional granularity');
+xlabel('(overall) emotional granularity');
 %ylim([0 100]);
 ylabel('classification accuracy (%)');
 h1 = lsline;
